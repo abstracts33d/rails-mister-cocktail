@@ -1,41 +1,25 @@
-<!-- <div data-sticky-container>
-  <div class="title-bar" id="navbar" data-sticky data-options="marginTop:0;" style="width:100%">
-    <div class="title-bar-left">
-      <ul class="dropdown menu" data-dropdown-menu>
-        <li class="menu-text"><%= link_to (image_tag "logo.png",  style:"height: 17px"), root_path, style: "padding:0" %></li>
-      </ul>
-    </div>
-    <div class="title-bar-right">
-      <ul class="menu align-right">
-        <li>
-          <form action="/query" method="post">
-            <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
-            <input class="search-input" type="search" placeholder="Search by name or ingredient" type="text" name="search">
-          </form>
-        </li>
-        <li><%= link_to "New Cocktail", new_cocktail_path, class: "button" %></li>
-      </ul>
-    </div>
-  </div>
-</div> -->
+<div class="top-bar-container" data-sticky-container>
+  <div class="sticky sticky-topbar" data-sticky data-options="anchor: page; marginTop: 0; stickyOn: small;">
 
+    <div class="top-bar" >
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text"><%= link_to (image_tag "logo.png",  style:"height: 17px"), root_path, style: "padding:0" %></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li>
+            <form action="/query" method="post" id="visible_form">
+              <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+              <input class="search-input-1" type="search" placeholder="Search" type="text" name="search">
+            </form>
+          </li>
+          <li><%= link_to "New Cocktail", new_cocktail_path, class: "button" %>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-<div class="top-bar">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text"><%= link_to (image_tag "logo.png",  style:"height: 17px"), root_path, style: "padding:0" %></li>
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu">
-      <li>
-        <form action="/query" method="post" id="visible_form">
-          <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
-          <input class="search-input-1" type="search" placeholder="Search" type="text" name="search">
-        </form>
-      </li>
-      <li><%= link_to "New Cocktail", new_cocktail_path, class: "button" %>
-      </li>
-    </ul>
   </div>
 </div>

@@ -9,6 +9,7 @@
 
 @import "rules/input-reset";
 @import "rules/tags";
+@import "rules/upload-button";
 
 @import "componnents/flip-card";
 @import "componnents/hero";
@@ -113,11 +114,6 @@ a{
 }
 
 
-// @media only screen and (min-width: 650px) {
-//   #hidden_form{
-//     display: none;
-//   }
-//   #visible_form{
-//     display: block;
-//   }
-// }
+.sticky-topbar {
+  width: 100%;
+}
