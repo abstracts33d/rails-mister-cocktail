@@ -98,3 +98,26 @@ a{
 #hidden_form{
   display: none;
 }
+
+
+@media only screen and (max-width: 650px) {
+  #hidden_form{
+    display: block;
+  }
+  #visible_form{
+    display: none;
+  }
+  #content #title .letter{
+    font-size: 1.8em;
+  }
+}
+
+
+// @media only screen and (min-width: 650px) {
+//   #hidden_form{
+//     display: none;
+//   }
+//   #visible_form{
+//     display: block;
+//   }
+// }

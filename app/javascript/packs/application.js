@@ -15,7 +15,8 @@ var options = {
   strings: ["Try me out ;)", "Search by name", "Or by Ingredient", ""],
   typeSpeed: 25
 }
-var typed = new Typed(".search-input", options);
+const typed1 = new Typed(".search-input-1", options);
+const typed2 = new Typed(".search-input-2", options);
 
 
 
