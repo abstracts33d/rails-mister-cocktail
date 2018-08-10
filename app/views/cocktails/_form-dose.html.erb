@@ -1,0 +1,9 @@
+<%= simple_form_for [@cocktail, @dose]  do |f| %>
+<div class="form-inputs">
+  <%= f.input :description, required: true %>
+  <%= f.association :ingredient, required: true  %>
+</div>
+<div class="form-actions">
+  <%= f.button :submit, "Add Ingredient"%>
+</div>
+<% end %>

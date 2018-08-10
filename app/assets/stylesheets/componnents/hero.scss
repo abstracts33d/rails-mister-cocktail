@@ -1,0 +1,16 @@
+$hero-height: 92vh;
+.hero-section {
+  background: image-url("banner.jpg") 50% no-repeat;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+
+  .hero-section-text {
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+}

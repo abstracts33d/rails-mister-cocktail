@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta property="og:title" content="Cocktailicious">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://cocktailicious.herokuapp.com/">
+  <meta property="og:image" content="https://cocktailicious.herokuapp.com/assets/banner-c836eb37babf092fc0f7e24c44b387e04aec19aeb429b23f99228aaabc86ad7a.jpg">
+  <meta property="og:description" content="Cocktail Repository With Edition and Reviews">
+  <meta property="og:site-name" content="Cocktailicious">
+  <meta name="twitter:site" content="https://cocktailicious.herokuapp.com/">
+  <meta name="twitter:title" content="Cocktailicious">
+  <meta name="twitter:description" content="Cocktail Repository With Edition and Reviews">
+  <meta name="twitter:creator" content="Manuel Wegria">
+  <meta name="twitter:image:src" content="https://cocktailicious.herokuapp.com/assets/banner-c836eb37babf092fc0f7e24c44b387e04aec19aeb429b23f99228aaabc86ad7a.jpg">
+
+  <title><%= content_for?(:title) ? yield(:title) : "Cocktailicious" %></title>
+  <%= favicon_link_tag 'favicon.png' %>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <%= render 'shared/nav' %>
+  <%= yield %>
+  <%= javascript_pack_tag 'application' %>
+</body>
+</html>
+
+
+
