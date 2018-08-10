@@ -67,3 +67,5 @@ gem 'rest-client'
 gem 'yui-compressor'
 
 gem 'faker'
+
+gem 'dotenv-rails', groups: [:development, :test]
