@@ -1,4 +1,4 @@
-<div data-sticky-container>
+<!-- <div data-sticky-container>
   <div class="title-bar" id="navbar" data-sticky data-options="marginTop:0;" style="width:100%">
     <div class="title-bar-left">
       <ul class="dropdown menu" data-dropdown-menu>
@@ -16,5 +16,26 @@
         <li><%= link_to "New Cocktail", new_cocktail_path, class: "button" %></li>
       </ul>
     </div>
+  </div>
+</div> -->
+
+
+<div class="top-bar">
+  <div class="top-bar-left">
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li class="menu-text"><%= link_to (image_tag "logo.png",  style:"height: 17px"), root_path, style: "padding:0" %></li>
+    </ul>
+  </div>
+  <div class="top-bar-right">
+    <ul class="menu">
+      <li>
+        <form action="/query" method="post">
+          <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
+          <input class="search-input" type="search" placeholder="Search" type="text" name="search">
+        </form>
+      </li>
+      <li><%= link_to "New Cocktail", new_cocktail_path, class: "button" %>
+      </li>
+    </ul>
   </div>
 </div>

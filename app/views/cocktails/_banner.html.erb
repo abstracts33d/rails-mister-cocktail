@@ -3,9 +3,9 @@
     <div id="content"><span class="first"></div>
     <!-- <h1>Mister Cocktail</h1> -->
     <h4>You love them, so do we...</h4>
-    <form action="/query" method="post">
+    <form action="/query" method="post" id="hidden_form">
       <%= hidden_field_tag :authenticity_token, form_authenticity_token -%>
-      <!-- <input type="search" placeholder="Search" type="text" name="search"> -->
+      <input type="search" placeholder="Search" type="text" name="search">
     </form>
   </div>
 </div>

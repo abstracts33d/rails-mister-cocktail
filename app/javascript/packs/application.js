@@ -12,7 +12,7 @@ console.log('Hello World from Webpacker')
 import Typed from 'typed.js';
 
 var options = {
-  strings: ["Try me out ;)", "You can search by name", "Or by Ingredient", ""],
+  strings: ["Try me out ;)", "Search by name", "Or by Ingredient", ""],
   typeSpeed: 25
 }
 var typed = new Typed(".search-input", options);
