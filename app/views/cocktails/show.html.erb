@@ -1,4 +1,4 @@
-<div class="card-img" style="<%= "background: linear-gradient(190deg,rgba(0,0,0,0.1), rgba(0,0,0,0.5)) ,url(#{@cocktail.img_url}) 0 0 no-repeat; background-size: cover;" %>"></div>
+<div class="card-img" style="<%= "background: linear-gradient(190deg,rgba(0,0,0,0.1), rgba(0,0,0,0.5)) ,url(#{@cocktail.photo_url}) 0 0 no-repeat; background-size: cover;" %>"></div>
 <div class="card big">
   <div class="card-main">
     <h1 class="align-center" style="padding-top: 1.5em;">
@@ -55,9 +55,6 @@
     <%= render 'form-review' %>
   </div>
 </div>
-
-
-
 
 <div class="links">
   <%= link_to "", root_path, class: "fas fa-arrow-left" %>

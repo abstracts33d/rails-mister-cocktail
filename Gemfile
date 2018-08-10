@@ -69,3 +69,7 @@ gem 'yui-compressor'
 gem 'faker'
 
 gem 'dotenv-rails', groups: [:development, :test]
+
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog-aws'
