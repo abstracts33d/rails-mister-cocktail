@@ -38,6 +38,12 @@ document.addEventListener('DOMContentLoaded', init(), false);
 
 
 
+let cells = document.querySelectorAll(".grid-x .cell")
+
+cells.forEach((cell) => {
+  cell.setAttribute('data-aos', "zoom-in");
+})
+
 
 import Typed from 'typed.js';
 var options = {
