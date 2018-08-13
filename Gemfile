@@ -73,3 +73,5 @@ gem 'dotenv-rails', groups: [:development, :test]
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
+
+gem 'react-rails'
