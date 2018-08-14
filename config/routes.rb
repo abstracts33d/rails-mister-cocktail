@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   end
 
   post '/query' => 'cocktails#search'
+  get '/query' => redirect('/')
+
 end

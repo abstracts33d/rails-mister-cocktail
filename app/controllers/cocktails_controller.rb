@@ -49,6 +49,8 @@ class CocktailsController < ApplicationController
   end
 
   def search
+    redirect_to root_path and return if params[:search].blank?
+
     query = "%#{params[:search]}%"
     c = Cocktail.arel_table
     i = Ingredient.arel_table
