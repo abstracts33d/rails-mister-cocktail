@@ -12,12 +12,6 @@ services:
     # These variables are passed into the container.
     environment:
       - UID=${HOST_UID:-4000}
-      - PORT=${PORT:-3333}
-      - RAILS_ENV=${RAILS_ENV:-development}
-      - AWS_REGION=${AWS_REGION}
-      - AWS_S3_BUCKET_NAME=${AWS_S3_BUCKET_NAME}
-      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
-      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
     # Run with user priviliges by default.
     user: ${HOST_USER:-nodummy}
     image: ${PROJECT_NAME}:${HOST_USER:-nodummy}
@@ -31,29 +25,22 @@ services:
         - HOST_UID=${HOST_UID:-4000}
         - HOST_USER=${HOST_USER:-nodummy}
         - PROJECT_NAME=${PROJECT_NAME}
-        - PORT=${PORT:-3333}
-        - RAILS_ENV=${RAILS_ENV:-development}
-    # Map volumes form host to container
-    volumes:
-      - ${PWD:-.}:/home/${HOST_USER}/${PROJECT_NAME}/
     # Run container as a service. Replace with something useful.
-    command: ["rails", "s", "-p", "${PORT:-3333}", "-e", "${RAILS_ENV:-development}"]
+    command: ["tail", "-f", "/dev/null"]
     # Espose ports to the HOST:OTHER_CONTAINERS
-    ports:
-      - ${PORT:-3333}:${PORT:-3333}
+    # ports:
+    #   - XXXX:XXXX
     # Set container depenpencies
-    depends_on:
-      - db
-  db:
-    image: postgres:11-alpine
-    # These variables are passed into the container.
-    # On EC2 instances root password is unset
-    # POSTGRES_HOST_AUTH_METHOD=trust is needed for proper functionning
-    environment:
-      - POSTGRES_HOST_AUTH_METHOD=trust
-    # Map volumes form host to container
+    # depends_on:
+    #   - db
+    # Copy current (git-) project into container.
     volumes:
-      - db-data:/var/lib/postgresql/data
+      - ${PWD:-.}:/home/${HOST_USER}/${PROJECT_NAME}
+#   db:
+#       image: postgres:alpine
+#       # Map volumes form host to container
+#       volumes:
+#         - db-data:/var/lib/postgresql/data
 
-volumes:
-  db-data:
+# volumes:
+#   db-data:
