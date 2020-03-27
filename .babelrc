@@ -2,7 +2,7 @@
   "presets": [
   ],
   "plugins": [
-    "syntax-dynamic-import",
+    "@babel/syntax-dynamic-import",
     "transform-object-rest-spread"
   ]
 }
