@@ -3,6 +3,6 @@
   ],
   "plugins": [
     "@babel/syntax-dynamic-import",
-    "@babel/transform-object-rest-spread"
+    "@babel/plugin-proposal-object-rest-spread"
   ]
 }
