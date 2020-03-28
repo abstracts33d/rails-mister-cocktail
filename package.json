@@ -3,7 +3,7 @@
   "private": true,
   "dependencies": {
     "@babel/core": "^7.9.0",
-    "@rails/webpacker": "4.1.0",
+    "@rails/webpacker": "4.2.2",
     "aos": "^2.3.3",
     "core-js": "^3.6.4",
     "jquery": "^3.4.0",
