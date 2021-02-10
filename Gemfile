@@ -70,6 +70,6 @@ gem 'faker'
 
 gem 'dotenv-rails', '>= 2.5.0', groups: [:development, :test]
 
-gem 'carrierwave'
+gem 'carrierwave', '>= 1.3.2'
 gem 'mini_magick'
 gem 'fog-aws', '>= 3.0.0'
