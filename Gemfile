@@ -10,11 +10,11 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.12', '>= 3.12.4'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.1', '>= 5.1.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '>= 3.5.5'
+gem 'webpacker', '>= 5.0.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
@@ -45,7 +45,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.6.2'
+  gem 'web-console', '>= 3.7.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -55,21 +55,21 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'rspec-rails', '>= 3.8.0', group: [ :test ]
-gem 'rails-controller-testing', '>= 1.0.2', group: [ :test ]
+gem 'rspec-rails', '>= 4.0.0', group: [ :test ]
+gem 'rails-controller-testing', '>= 1.0.4', group: [ :test ]
 
 gem 'autoprefixer-rails'
-gem 'foundation-rails', '>= 6.4.3.0'
+gem 'foundation-rails', '>= 6.6.1.0'
 gem 'font-awesome-sass', '~> 5.0.9'
-gem 'simple_form', '>= 5.0.0'
+gem 'simple_form', '>= 5.0.2'
 
 gem 'rest-client'
 gem 'yui-compressor'
 
 gem 'faker'
 
-gem 'dotenv-rails', '>= 2.5.0', groups: [:development, :test]
+gem 'dotenv-rails', '>= 2.7.5', groups: [:development, :test]
 
 gem 'carrierwave'
 gem 'mini_magick'
-gem 'fog-aws', '>= 3.0.0'
+gem 'fog-aws', '>= 3.6.2'
