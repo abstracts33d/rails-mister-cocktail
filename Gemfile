@@ -10,7 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.12', '>= 3.12.4'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 6.0', '>= 6.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -59,7 +59,7 @@ gem 'rspec-rails', '>= 3.8.0', group: [ :test ]
 gem 'rails-controller-testing', '>= 1.0.2', group: [ :test ]
 
 gem 'autoprefixer-rails'
-gem 'foundation-rails', '>= 6.4.3.0'
+gem 'foundation-rails', '>= 6.6.1.0'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form', '>= 5.0.0'
 
